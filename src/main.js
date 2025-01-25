@@ -10,6 +10,16 @@ let config = {
     type: Phaser.AUTO,
     width: 800,
     height: 800,
+    pixleArt: true,
+    render: {// not sure why this is not working
+        pixleArt: true,
+    },
+    physics:{
+        default: 'arcade',
+        arcade: {
+            debugger: true
+        },
+    },
     scene: [ Movement ]
 }
 
